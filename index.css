@@ -1,0 +1,15 @@
+:root {
+    --color-light: rgba(240, 232, 232, 0.822);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue";
+    line-height: 1.7;
+    background-color: var(--color-light)
+}

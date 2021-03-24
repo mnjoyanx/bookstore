@@ -1,5 +1,8 @@
 :root {
     --color-light: rgba(240, 232, 232, 0.822);
+    --color-text-primary: rgb(135, 135, 252);
+    --color-text-gray: rgb(167, 165, 165);
+    --font-title: 1.5625rem;
 }
 
 * {
@@ -12,4 +15,23 @@ body {
     font-family: "Helvetica Neue";
     line-height: 1.7;
     background-color: var(--color-light)
+}
+
+p {
+    margin: 0
+}
+
+.button-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-text-gray);
+    width: 100%;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background: linear-gradient(#e66465, #9198e5);
+    color: white
 }

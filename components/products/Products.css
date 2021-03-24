@@ -1,0 +1,21 @@
+.products__items-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.products__list-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.products__list-main p {
+    font-size: var(--font-title);
+    color: var(--color-text-primary);
+}
+
+.products__list-main span {
+    color: var(--color-text-gray);
+}

@@ -11,6 +11,7 @@
     flex-direction: column;
 }
 
+
 .products__list-main p {
     font-size: var(--font-title);
     color: var(--color-text-primary);
@@ -18,4 +19,9 @@
 
 .products__list-main span {
     color: var(--color-text-gray);
+}
+
+.products__list-main img {
+    height: 250px;
+    width: 200px
 }

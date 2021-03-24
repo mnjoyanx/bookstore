@@ -9,7 +9,7 @@ class Products {
                 <li class="products__list-main">
                     <p>${name}</p>
                     <img src="${imgSrc}" />
-                    <span>${price}</span>
+                    <span>👌🏻${price.toLocaleString()}</span>
                     <button class="button-primary">Add to Card</button>
                 </li>
             `;

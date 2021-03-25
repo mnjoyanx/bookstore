@@ -1,18 +1,35 @@
 class LocalStorage {
+    constructor() {
+        this.keyName = "productId"
+    }
     getItems() {
+        const currentProduct = localStorage.getItem(this.keyName)
 
-        CATALOG.map(item => {
-        })
+        if(currentProduct) {
+            return JSON.parse(currentProduct)
+        }
+        return []
     }
 
-    setItems() {
-        const productId = CATALOG.forEach(item => item.id)
-    window.localeStorage.setItem('product', 5)
+    setItems(id) {
+        let product = this.getItems()
+        let isExist = false
+        if(product.includes(id)) {
+            return product
+        }
+        isExist = true
+        product.push(id)
+
+        localStorage.setItem(this.keyName, JSON.stringify(product))
+
+        return {isExist, product}
+
     }
 }
 
 const localeStorages = new LocalStorage()
 
-localeStorages.getItems()
 
-localeStorages.setItems()
+localeStorages.setItems(0)
+localeStorages.setItems('522')
+localeStorages.setItems('58')

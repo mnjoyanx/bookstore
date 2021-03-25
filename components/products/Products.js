@@ -2,15 +2,19 @@ class Products {
 
 
     render() {
+        let productIsExistInCatalog = localeStorages.getItems()
         let catalogHtml = "";
 
-        CATALOG.map(({ name, imgSrc, price }) => {
+        CATALOG.map(({ name, imgSrc, price,id }) => {
+            let productId = productIsExistInCatalog.find(id => {
+                return id
+            })
             catalogHtml += `
                 <li class="products__list-main">
                     <p>${name}</p>
                     <img src="${imgSrc}" />
                     <span>👌🏻${price.toLocaleString()}</span>
-                    <button class="button-primary">Add to Card</button>
+                    <button class="button-primary ${productIsExistInCatalog.includes(id) ? 'removable' : 'canadd'}">${productIsExistInCatalog.includes(id) ? 'Revmove from Card' : 'Add to Card'}</button>
                 </li>
             `;
         });

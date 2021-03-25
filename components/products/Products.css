@@ -25,3 +25,8 @@
     height: 250px;
     width: 200px
 }
+
+button.removable {
+    background-color: #e66465;
+    color: white;
+}

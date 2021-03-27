@@ -1,0 +1,17 @@
+.catalog--modal {
+    min-width: 80%;
+    position: absolute;
+    top: 50%;
+    min-height: 50%;
+    background: darkcyan;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.close--modal {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}

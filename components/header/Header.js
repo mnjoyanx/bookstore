@@ -5,11 +5,15 @@ class Header {
 
     render(count) {
         const header = `
-            <div class="header--main">
+            <div class="header--main" onclick="header.openProductsModal()">
             ⚡️ <p class="counter">${count}</p>
 </div>
         `
         this.element.innerHTML = header
+    }
+
+    openProductsModal() {
+        shoping.render()
     }
 }
 

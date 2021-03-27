@@ -31,3 +31,9 @@ p {
     cursor: pointer;
 }
 
+.header--main {
+    cursor: pointer;
+}
+.catalog--modal {
+    transition: .3s;
+}

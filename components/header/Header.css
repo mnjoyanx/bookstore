@@ -1,0 +1,17 @@
+#header {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 200px;
+    background: darkcyan;
+}
+.header--main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--main p {
+    margin-left: 5px;
+    color: white;
+    font-size: 20px;
+}

@@ -13,12 +13,14 @@ class LocalStorage {
 
     setItems(id) {
         let product = this.getItems()
+        let productId = product.indexOf(id)
         let isExist = false
-        if(product.includes(id)) {
-            return product
+        if(productId == -1) {
+            product.push(id)
+            isExist = true
+        } else {
+            product.splice(productId, 1)
         }
-        isExist = true
-        product.push(id)
 
         localStorage.setItem(this.keyName, JSON.stringify(product))
 
@@ -30,6 +32,3 @@ class LocalStorage {
 const localeStorages = new LocalStorage()
 
 
-localeStorages.setItems(0)
-localeStorages.setItems('522')
-localeStorages.setItems('58')

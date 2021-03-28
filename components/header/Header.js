@@ -18,4 +18,3 @@ class Header {
 }
 
 const header = new Header()
-header.render(localeStorages.getItems().length)

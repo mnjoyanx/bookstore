@@ -51,11 +51,9 @@ class Products {
             element.innerHTML = this.canAdd
         }
     header.render(product.length)
-        shoping.render()
     }
 
 }
 
 const products = new Products();
 
-products.render();

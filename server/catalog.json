@@ -1,0 +1,22 @@
+ {
+   "data" : [
+  {
+    "id": 0,
+    "name": "first",
+    "imgSrc": "https://d3myrwj42s63no.cloudfront.net/180/978/052/552/041/2/9780525520412.jpg",
+    "price": "300"
+  },
+  {
+    "id": 1,
+    "name": "second",
+    "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBC_j-IB2-6tuzS1MeOyQUN9qy2_kKpY0jg&usqp=CAU",
+    "price": "250"
+  },
+  {
+    "id": 2,
+    "name": "third",
+    "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBC_j-IB2-6tuzS1MeOyQUN9qy2_kKpY0jg&usqp=CAU",
+    "price": "200"
+  }
+]
+}

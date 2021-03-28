@@ -10,7 +10,7 @@ const axios = window.axios
 
 function getItems() {
     loading.render()
-    axios.get('http://localhost:3000/datsdvsdva')
+    axios.get('http://localhost:3000/data')
         .then(res => {
             loading.remove()
             CATALOG = res.data
